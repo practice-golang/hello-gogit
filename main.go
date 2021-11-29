@@ -11,7 +11,7 @@ func main() {
 	// Clone the given repository to the given directory
 	fmt.Println("Same as git clone https://github.com/go-git/go-git")
 
-	_, err := git.PlainClone("../sample-repo", false, &git.CloneOptions{
+	_, err := git.PlainClone("./sample-repo", false, &git.CloneOptions{
 		URL:      "https://github.com/go-git/go-git",
 		Progress: os.Stdout,
 	})
