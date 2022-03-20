@@ -7,7 +7,7 @@ import (
 	"github.com/go-git/go-git/v5"
 )
 
-func main() {
+func clone() {
 	// Clone the given repository to the given directory
 	fmt.Println("Same as git clone https://github.com/go-git/go-git")
 
@@ -19,4 +19,8 @@ func main() {
 	if err != nil {
 		log.Fatalf("\x1b[31;1m%s\x1b[0m\n", fmt.Sprintf("error: %s", err))
 	}
+}
+
+func main() {
+	clone()
 }
